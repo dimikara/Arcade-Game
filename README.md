@@ -33,6 +33,14 @@ I then found a different way to make the audio play without *promises*. I added 
 
 and the issue was resolved.
 ___
+**SCREENSHOT**
+
+A screenshot of the game:
+
+![Screenshot1](/images/Screenshot1.png "Instructions")
+
+
+___
 
 **FUTURE UPDATES**
 
@@ -53,5 +61,5 @@ Learn more at: http://www.themotionmonkey.co.uk/free-resources/retro-arcade-soun
 - Collision detection:
 https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
 
-- Code to prevent window from rolling up and down, from [ncaron](https://github.com/ncaron/frontend-nanodegree-arcade-game/blob/master/js/app.js) /
+- Code to prevent window from rolling up and down, from [ncaron](https://github.com/ncaron/frontend-nanodegree-arcade-game/blob/master/js/app.js) -
 Found via [ricardobossan](https://github.com/ricardobossan/arcade-game)
