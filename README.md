@@ -40,6 +40,7 @@ ___
 - Timer & Score
 - Levels of difficulty
 - More & better sounds
+- Add instructions in the game via a modal/button or directly in html
 ___
 
 **CREDITS**
@@ -51,3 +52,6 @@ Learn more at: http://www.themotionmonkey.co.uk/free-resources/retro-arcade-soun
 
 - Collision detection:
 https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
+
+- Code to prevent window from rolling up and down, from [ncaron](https://github.com/ncaron/frontend-nanodegree-arcade-game/blob/master/js/app.js) /
+Found via [ricardobossan](https://github.com/ricardobossan/arcade-game)
