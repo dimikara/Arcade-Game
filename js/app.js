@@ -150,3 +150,13 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
+// Prevents the window from scrolling up and down when the arrow keys are pressed.
+// Original source: https://github.com/ncaron/frontend-nanodegree-arcade-game/blob/master/js/app.js
+// Found from: https://github.com/ricardobossan/arcade-game 
+window.addEventListener("keydown", function(e) {
+    if ([38, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
