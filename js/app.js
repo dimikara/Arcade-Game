@@ -16,7 +16,12 @@ var Enemy = function(x, y, speed) {
 Enemy.prototype.update = function(dt) {
     // Multiply any movement by the dt parameter to ensure
     // the game runs at the same speed for all computers.
-    this.x += dt * this.speed;
+    if (this.x <= 505) {
+        this.x += this.speed * dt;
+    }
+    else {
+        this.x = 0;
+    }
 };
 
 
@@ -30,7 +35,7 @@ Enemy.prototype.render = function() {
 var Player = function(x, y) {
     this.x = x,
     this.y = y,
-  // The image/sprite for our player
+  // The image for the player
     this.sprite = 'images/char-princess-girl.png';
  };
 
@@ -43,7 +48,6 @@ Player.prototype.update = function() {
     } else if (this.x > 400) {
         this.x = 400;
     }
-
     //y axis boundaries
     else if (this.y > 400) {
         this.y = 400;
