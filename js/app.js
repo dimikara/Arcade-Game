@@ -62,7 +62,8 @@ Player.prototype.render = function() {
 
 Player.prototype.handleInput = function(key) {
     // The player moves to the left with the left arrow key.
-    // 101 is derived by the division of the 505 (width) to the 5 tiles.
+    // 101 derives by the division of the 505 (width) to the 
+    // number of tiles, i.e. 5.
     if (key == 'left' && this.x > 0) {
         this.x -= 101;
         audio.src = 'sounds/OldSchool2.wav';
@@ -70,7 +71,8 @@ Player.prototype.handleInput = function(key) {
     };
 
     // The player moves to the right with the right arrow key.
-    // Again, 101 is derived by the division of the 505 (width) to the 5 tiles.
+    // 101 derives by the division of the 505 (width) to the 
+    // number of tiles, i.e. 5.
     if (key == 'right' && this.x < 405) {
         this.x += 101;
         audio.src = 'sounds/OldSchool2.wav';
@@ -78,7 +80,8 @@ Player.prototype.handleInput = function(key) {
     };
 
     // The player moves upwards with the up arrow key.
-    // 86 is derived by the division of the 606 (height) to the 6+1 tiles.
+    // 86 derives by the division of the 606 (height) to the 
+    // number of tiles, i.e. 6+1=7.
     if (key == 'up' && this.y > 0) {
         this.y -= 86;
         audio.src = 'sounds/OldSchool2.wav';
@@ -86,7 +89,8 @@ Player.prototype.handleInput = function(key) {
     };
 
     // The player moves downwards with the down arrow key.
-    // Again, 86 is derived by the division of the 606 (height) to the 6+1 tiles.
+    // 86 derives by the division of the 606 (height) to the 
+    // number of tiles, i.e. 6+1=7.
     if (key == 'down' && this.y < 405) {
         this.y += 86;
         audio.src = 'sounds/OldSchool2.wav';
@@ -105,6 +109,9 @@ Player.prototype.reset = function() {
     // Player starts from/returns to their original position
     this.x = 200;
     this.y = 400;
+    // I used this method for playing audio because I was getting an exception
+    // with the audio.src/audio.play()
+    // See: https://developers.google.com/web/updates/2017/06/play-request-was-interrupted
     var audio = document.getElementById("audio");
     audio.play();
 };
