@@ -1,3 +1,6 @@
+var audio = new Audio;
+
+
 // Enemies the player must avoid
 var Enemy = function(x, y, speed) {
     this.x = x,
@@ -58,24 +61,32 @@ Player.prototype.handleInput = function(key) {
     // 101 is derived by the division of the 505 (width) to the 5 tiles.
     if (key == 'left' && this.x > 0) {
         this.x -= 101;
+        audio.src = 'sounds/OldSchool2.wav';
+        audio.play();
     };
 
     // The player moves to the right with the right arrow key.
     // Again, 101 is derived by the division of the 505 (width) to the 5 tiles.
     if (key == 'right' && this.x < 405) {
         this.x += 101;
+        audio.src = 'sounds/OldSchool2.wav';
+        audio.play();
     };
 
     // The player moves upwards with the up arrow key.
     // 86 is derived by the division of the 606 (height) to the 6+1 tiles.
     if (key == 'up' && this.y > 0) {
         this.y -= 86;
+        audio.src = 'sounds/OldSchool2.wav';
+        audio.play();
     };
 
     // The player moves downwards with the down arrow key.
     // Again, 86 is derived by the division of the 606 (height) to the 6+1 tiles.
     if (key == 'down' && this.y < 405) {
         this.y += 86;
+        audio.src = 'sounds/OldSchool2.wav';
+        audio.play();
     };
 
     // When the player reaches the water, the character spirit goes 
@@ -90,18 +101,22 @@ Player.prototype.reset = function() {
     // Player starts from/returns to their original position
     this.x = 200;
     this.y = 400;
+    var audio = document.getElementById("audio");
+    audio.play();
 };
 
 
-// Now we instantiate our objects.
-// All the enemy objects go in an array called allEnemies
-// The player object goes in a variable called player
-var allEnemies = [];
-var allEnemiesFixCoordinates = [62, 145, 230];
+// Instantiation of objects
+// All the enemy objects go in the array allEnemies
+var allEnemies = [],
+    allEnemiesFixCoordinates = [62, 145, 230];
 for (let allEnemiesFixCoordinate of allEnemiesFixCoordinates) {
     var enemy = new Enemy(0, allEnemiesFixCoordinate, 150 + Math.floor(Math.random() * 250))
     allEnemies.push(enemy);
 };    
+
+
+// The player object goes in a variable called player
 player = new Player(200, 400);
 
 
