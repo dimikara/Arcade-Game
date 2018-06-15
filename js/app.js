@@ -25,19 +25,26 @@ Enemy.prototype.update = function(dt) {
 };
 
 
-// Draw the enemy on the screen, required method for game
-Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-};
+// These will be used for the collision detection function
+var playerWidth = 75,
+    playerHeight = 80;
 
 
 // The player class
 var Player = function(x, y) {
     this.x = x,
     this.y = y,
+    this.w = playerWidth,
+    this.h = playerHeight,
   // The image for the player
     this.sprite = 'images/char-princess-girl.png';
  };
+
+
+// Draw the enemy on the screen, required method for game
+Enemy.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+};
 
 
 // The class requires an update(), render() and a handleInput() method.
