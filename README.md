@@ -9,6 +9,7 @@ Classic arcade game, a simplified frogger game
 - The **goal** of the game is for the player to reach the water without colliding into any one of the bugs. 
 - Once the player **collides** with a bug, the game is reset and the player moves back to the **start position**. Once the player reaches the **water** the game is **won**.
 
+___
 
 **NOTES**
 
@@ -31,6 +32,7 @@ I then found a different way to make the audio play without *promises*. I added 
     document.getElementById("audio")
 
 and the issue was resolved.
+___
 
 **FUTURE UPDATES**
 
@@ -38,7 +40,7 @@ and the issue was resolved.
 - Timer & Score
 - Levels of difficulty
 - More & better sounds
-
+___
 
 **CREDITS**
 
