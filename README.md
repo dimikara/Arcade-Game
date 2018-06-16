@@ -11,6 +11,14 @@ Classic arcade game, a simplified frogger game
 - Every time the player **collides** with a bug they **lose 1 point** and the character moves back to the start position. Every time the player reaches the **water** they get **2 points** and again the character moves back to the start position.
 - The game  is **won** when the player reaches the score of **10 points**.
 
+___
+
+**SCREENSHOT**
+
+A screenshot of the game:
+
+![Screenshot1](/images/Screenshot1.png "Instructions")
+
 
 ___
 
@@ -39,15 +47,6 @@ and the issue was resolved.
 * **The keyup function** 
 
 I found a nice explanation on page http://www.javascripter.net/faq/keycodes.htm and I added succesfully the a, d, w, s keys, plus the Esc key to the allowedKeys variable. The player can now use the letter keyboard keys instead of the arrows and if they hit the Esc key, the game is restarted i.e. the character returns to their starting position and the scores & lives are reset.
-
-___
-
-**SCREENSHOT**
-
-A screenshot of the game:
-
-![Screenshot1](/images/Screenshot1.png "Instructions")
-
 
 ___
 
