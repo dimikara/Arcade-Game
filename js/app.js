@@ -174,6 +174,8 @@ Player.prototype.handleInput = function(key) {
 
 
 Modals.prototype.win = function() {
+    lives = 5;
+    score = 3;
     swal({
         title: "Congratulations!",
         text: "You got 10 points! You won!",
@@ -184,6 +186,8 @@ Modals.prototype.win = function() {
 
 
 Modals.prototype.lose = function() {
+    lives = 5;
+    score = 3;
     swal({
         title: "Sorry!",
         text: "You're out of lifes! You lost!",
