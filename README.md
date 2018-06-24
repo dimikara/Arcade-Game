@@ -13,16 +13,7 @@ Classic arcade game, a simplified frogger game
 
 ___
 
-**SCREENSHOT**
-
-A screenshot of the game:
-
-![Screenshot1](/images/Screenshot1.png "Instructions")
-
-
-___
-
-**NOTES/EXTRA KNOWLEDGE**
+**CHALLENGES/EXTRA KNOWLEDGE**
 
 * **Adding classic arcade sounds**
 
@@ -50,9 +41,26 @@ I found a nice explanation on page http://www.javascripter.net/faq/keycodes.htm 
 
 ___
 
+**SCREENSHOTS**
+
+* A screenshot of the game:
+
+![Screenshot1](/images/Screenshot1.png "Instructions")
+
+* Winning the game:
+
+![Screenshot2](/images/Screenshot2.png "Winning the game")
+
+* Losing the game:
+
+![Screenshot3](/images/Screenshot3.png "Losing the game")
+
+___
+
 **FUTURE UPDATES**
 
 - Modal in the beginning for the player to choose character
+- Scoreboard with score & lifes left
 - Timer
 - Levels of difficulty
 - More & better sounds
@@ -61,13 +69,14 @@ ___
 
 **CREDITS**
 
-- Sounds:
+- **Sounds**
+
 The Motion Monkey Free Retro Arcade Sounds Pack v1.0.5
 
 All sounds are original recordings by The Motion Monkey.
 Learn more at: http://www.themotionmonkey.co.uk/free-resources/retro-arcade-sounds/
 
-- Collision detection
+- **Collision detection**
 
 Some helpful links to understand the logic:
 
@@ -79,8 +88,16 @@ Some helpful links to understand the logic:
 
 [Ben Cunnnigham](https://www.youtube.com/watch?v=7PHhRrjgTDA)'s YouTube video
 
-- Code to prevent window from rolling up and down, from [ncaron](https://github.com/ncaron/frontend-nanodegree-arcade-game/blob/master/js/app.js)
+- Code to **prevent window from rolling up and down**, from [ncaron](https://github.com/ncaron/frontend-nanodegree-arcade-game/blob/master/js/app.js)
 
 Found via [ricardobossan](https://github.com/ricardobossan/arcade-game).
 
-- For the modal in the end, I used [Sweetalert](https://sweetalert.js.org/guides/).
+- For the **modal in the end**, I used [Sweetalert](https://sweetalert.js.org/guides/).
+
+___
+
+**LICENSE**
+
+[MIT](https://github.com/dimikara/Memory-Game/blob/master/LICENSE.md) License.
+
+Copyright (c) 2018 Dimitra Karamperi
