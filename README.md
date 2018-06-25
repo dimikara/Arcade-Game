@@ -92,7 +92,7 @@ Some helpful links to understand the logic:
 
 Found via [ricardobossan](https://github.com/ricardobossan/arcade-game).
 
-- Font: [Mina](https://fonts.googleapis.com/css?family=Mina).
+- **Font**: [Mina](https://fonts.googleapis.com/css?family=Mina).
 
 - For the **modal in the end**, I used [Sweetalert](https://sweetalert.js.org/guides/).
 
